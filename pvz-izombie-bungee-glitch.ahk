@@ -4,12 +4,12 @@
  * Exploits the Bungee Zombie glitch in the "I, Zombie" game mode in Plants vs. Zombies
  */
 
-; Zombie/Plant Positions
+; Positions
 ; ---------------------------- 
-BungeeZombieX := 320
-BungeeZombieY := 40
-SunflowerX := 80
-SunflowerY := 220
+BungeeZombieX := 0  ; REPLACE
+BungeeZombieY := 0  ; REPLACE
+SunflowerX := 0     ; REPLACE
+SunflowerY := 0     ; REPLACE
 
 ; Functions
 ; ----------------------------
