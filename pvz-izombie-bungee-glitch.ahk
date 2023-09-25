@@ -1,7 +1,7 @@
 /*
  * pvz-izombie-bungee-glitch.ahk
  * 24 September 2023
- * Exploits the Bungee Zombie glitch in the "I, Zombie" game mode in Plants vs. Zombies
+ * Exploits the Bungee Zombie glitch in the "I, Zombie" puzzle game mode in Plants vs. Zombies: Game of the Year Edition
  */
 
 ; Positions
