@@ -42,9 +42,9 @@ GatherSun() {
     Click SunflowerX, SunflowerY
 }
 
-
 ; Key bindings
 ; ----------------------------
 NumpadMult::PlaceBungeeZombies(8)
 NumpadSub::GatherSun()
+r::Reload
 Esc::ExitApp
