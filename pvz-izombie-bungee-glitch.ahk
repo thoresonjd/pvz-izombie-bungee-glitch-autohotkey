@@ -1,6 +1,6 @@
 /*
  * pvz-izombie-bungee-glitch.ahk
- * 24 September 2023
+ * 25 September 2023
  * Exploits the Bungee Zombie glitch in the "I, Zombie" puzzle game mode in Plants vs. Zombies: Game of the Year Edition
  */
 
@@ -19,18 +19,21 @@ ToggleGamePause(delay := 5) {
     Send "{Space up}"
 }
 
+FlashPauseWindow(delay := 20) {
+    ToggleGamePause()
+    Sleep delay
+    ToggleGamePause()
+}
+
 PlaceBungeeZombie(delay := 20) {
     Click BungeeZombieX, BungeeZombieY
     Sleep delay
-    ToggleGamePause()
-    Sleep delay
-    ToggleGamePause()
+    FlashPauseWindow()
     Sleep delay
     Click SunflowerX, SunflowerY
     Sleep delay
-    ToggleGamePause()
+    FlashPauseWindow()
     Sleep delay
-    ToggleGamePause()
 }
 
 PlaceBungeeZombies(count) {
