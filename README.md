@@ -36,9 +36,14 @@ This glitch is often exploited in I, Zombie Endless to obtain the [Better Off De
 
 ## Usage
 
-The script requires a the positions of the Bungie Zombie's "seed" card and the sunflower's tile. These locations can be retrieved from AutoHotkey Window Spy.
+The script requires the positions of the Bungie Zombie's "seed" card and the sunflower's tile. The screen coordinates for both can be retrieved from AutoHotkey Window Spy. Simply move the mouse cursor over the target and mark down the default client coordinates.
 
-Under the "Positions" section, replace the default coordinates with the proper x and y values on your system.
+<div align="center">
+    <img src="./assets/ahk-window-spy.png" style="height: 10vw;" alt="Window Spy"/>
+    <p>Mouse coordinates shown in AutoHotkey Window Spy</p>
+</div>
+
+Under the "Positions" section of the script, replace the placeholder values with the proper x and y values on your system.
 ```
 ...
 
