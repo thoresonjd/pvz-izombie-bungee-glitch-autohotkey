@@ -1,43 +1,57 @@
 /*
  * pvz-izombie-bungee-glitch.ahk
- * 25 September 2023
+ * Last modified: 2025-01-26
  * Exploits the Bungee Zombie glitch in the I, Zombie puzzle game mode in Plants vs. Zombies: Game of the Year Edition
  */
 
-; Positions
-; ---------------------------- 
-BungeeZombieX := 0  ; REPLACE
-BungeeZombieY := 0  ; REPLACE
-SunflowerX := 0     ; REPLACE
-SunflowerY := 0     ; REPLACE
 
+; ============================
+; Constants
+; ============================
+
+; Positions
+BungeeZombieX := 0  ; Bungee zombie card x-coordinate
+BungeeZombieY := 0  ; Bungee zombie card y-coordinate
+SunflowerX    := 0  ; Sunflower tile x-coordinate
+SunflowerY    := 0  ; Sunflower tile y-coordinate
+
+; Delays
+DelayBetweenSpaceDownUpMs          := 0 ; Milliseconds between space bar press and release
+DelayBetweenPauseResumeMs          := 0 ; Milliseconds between game pause and resume
+DelayBetweenZombiePlacementStepsMs := 0 ; Milliseconds between each step in placing a bungee zombie
+
+; Counts
+BungeeZombieCount := 0 ; Number of bungee zombies to place
+
+
+; ============================
 ; Functions
-; ----------------------------
-ToggleGamePause(delay := 5) {
+; ============================
+ToggleGamePause() {
     Send "{Space down}"
-    Sleep delay
+    Sleep DelayBetweenSpaceDownUpMs
     Send "{Space up}"
 }
 
-FlashPauseWindow(delay := 20) {
+FlashPauseWindow() {
     ToggleGamePause()
-    Sleep delay
+    Sleep DelayBetweenPauseResumeMs
     ToggleGamePause()
 }
 
-PlaceBungeeZombie(delay := 20) {
+PlaceBungeeZombie() {
     Click BungeeZombieX, BungeeZombieY
-    Sleep delay
+    Sleep DelayBetweenZombiePlacementStepsMs
     FlashPauseWindow()
-    Sleep delay
+    Sleep DelayBetweenZombiePlacementStepsMs
     Click SunflowerX, SunflowerY
-    Sleep delay
+    Sleep DelayBetweenZombiePlacementStepsMs
     FlashPauseWindow()
-    Sleep delay
+    Sleep DelayBetweenZombiePlacementStepsMs
 }
 
-PlaceBungeeZombies(count) {
-    Loop count
+PlaceBungeeZombies() {
+    Loop BungeeZombieCount
 	    PlaceBungeeZombie()
 }
 
@@ -45,12 +59,15 @@ GatherSun() {
     Click SunflowerX, SunflowerY
 }
 
+
+; ============================
 ; Key bindings
-; ----------------------------
-NumpadMult::PlaceBungeeZombies(8)
+; ============================
+NumpadMult::PlaceBungeeZombies()
 NumpadSub::GatherSun()
 r::Reload
 Esc::ExitApp
+
 
 /*
                                                                     !KZMGw:     
