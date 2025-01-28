@@ -12,7 +12,7 @@ AutoHotkey script exploiting the Bungee Zombie glitch in the I, Zombie puzzle ga
 
 ## The Glitch
 
-In the I, Zombie game mode, Bungee Zombies, instead of eating plants, descend from above and remove the plants by pulling them upwards out of the ground. When removed, sunflowers will drop 200 sun points each. Unlike being eaten, a sunflower drops all the sun at once when removed by a Bungee Zombie. The glitch allows for multiple Bungee Zombies to be simultaneously placed on a single sunflower. If timed correctly, the sunflower will be removed multiple times and will drop 200 sun for each Bungee Zombie that was placed on top of it, yielding a greater sun profit.
+In the I, Zombie game mode, Bungee Zombies, instead of eating plants, descend from above and remove the plants by pulling them upwards out of the ground. When removed, sunflowers will drop 200 sun points each. Unlike when being eaten, a sunflower drops all the sun at once when removed by a Bungee Zombie. The glitch allows for multiple Bungee Zombies to be simultaneously placed on a single sunflower. If timed correctly, the sunflower will be removed multiple times and will drop 200 sun for each Bungee Zombie that was placed on top of it, yielding a greater sun profit.
 
 Here's how it works:
 1. Click the Bungee Zombie's "seed" card to select it
@@ -27,7 +27,7 @@ Here's how it works:
 
 Each Bungee Zombie costs 125 sun points to use, and each sunflower will grant 200 sun points when removed. If *n* Bungee Zombies are placed, the total profit, when timed correctly, becomes: `200(n) - 125(n) = 75(n)`.
 
-This glitch is often exploited in I, Zombie Endless to obtain the [Better Off Dead](https://plantsvszombies.fandom.com/wiki/Better_Off_Dead) achievement on Steam. The achievements requires the player to gain a win streak of ten in I, Zombie Endless.
+This glitch is often exploited in I, Zombie Endless to obtain the [Better Off Dead](https://plantsvszombies.fandom.com/wiki/Better_Off_Dead) achievement on Steam. The achievement requires the player to gain a win streak of ten in I, Zombie Endless.
 
 <div align="center">
     <img src="./assets/better-off-dead.jpg" style="height: 10vw;" alt="AutoHotkey"/>
@@ -36,7 +36,7 @@ This glitch is often exploited in I, Zombie Endless to obtain the [Better Off De
 
 ## Usage
 
-The script requires the positions of the Bungie Zombie's "seed" card and the sunflower's tile. The screen coordinates for both can be retrieved from AutoHotkey Window Spy. Simply move the mouse cursor over the target and mark down the default client coordinates. The x-coordinate is on the left, and the y-coordinate is on the right.
+The script requires the positions of the Bungee Zombie's "seed" card and the sunflower's tile. The screen coordinates for both can be retrieved from AutoHotkey Window Spy. Simply move the mouse cursor over the target and mark down the default client coordinates. The x-coordinate is on the left, and the y-coordinate is on the right.
 
 <div align="center">
     <img src="./assets/ahk-window-spy.png" style="height: 10vw;" alt="Window Spy"/>
@@ -68,7 +68,7 @@ BungeeZombieCount := 0 ; Number of bungee zombies to place
 ...
 ```
 
-The following values worked for me (at least at the time of writing this sentence), but again, it may be different for you. It make take some minimal trial and error to get these right.
+The following values worked for me (at least at the time of writing this sentence), but again, it may be different for you. It may take some minimal trial and error to get these right.
 ```
 ...
 
