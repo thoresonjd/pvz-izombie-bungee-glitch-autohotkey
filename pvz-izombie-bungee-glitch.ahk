@@ -1,8 +1,7 @@
-/*
- * pvz-izombie-bungee-glitch.ahk
- * Last modified: 2025-01-26
- * Exploits the Bungee Zombie glitch in the I, Zombie puzzle game mode in Plants vs. Zombies: Game of the Year Edition
- */
+; File: pvz-izombie-bungee-glitch.ahk
+; Author: Justin Thoreson
+; Last modified: 2025-01-27
+; Description: Exploits the Bungee Zombie glitch in the I, Zombie puzzle game mode in Plants vs. Zombies: Game of the Year Edition.
 
 
 ; ============================
