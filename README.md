@@ -36,6 +36,8 @@ This glitch is often exploited in I, Zombie Endless to obtain the [Better Off De
 
 ## Usage
 
+This script was created specifically for Windows and conforms to AutoHotkey version 2.0.19 at the time of this writing. It is recommended to play the game in windowed mode when running this script.
+
 The script requires the positions of the Bungee Zombie's "seed" card and the sunflower's tile. The screen coordinates for both can be retrieved from AutoHotkey Window Spy. Simply move the mouse cursor over the target and mark down the default client coordinates. The x-coordinate is on the left, and the y-coordinate is on the right.
 
 <div align="center">
